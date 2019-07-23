@@ -43,10 +43,10 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		796E987D005CCAB0D2B56609 /* Pods-YYExtentions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYExtentions_Tests.debug.xcconfig"; path = "Target Support Files/Pods-YYExtentions_Tests/Pods-YYExtentions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		88543BE3592FC7DB371D0F9D /* YYExtentions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YYExtentions.podspec; path = ../YYExtentions.podspec; sourceTree = "<group>"; };
-		B3D1063C96E28FA2E2146860 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		88543BE3592FC7DB371D0F9D /* YYExtentions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YYExtentions.podspec; path = ../YYExtentions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B3D1063C96E28FA2E2146860 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DAB5375A0FB55B3900F9C9D7 /* Pods-YYExtentions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYExtentions_Example.debug.xcconfig"; path = "Target Support Files/Pods-YYExtentions_Example/Pods-YYExtentions_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F99362B6E36CECA07AD6A04B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F99362B6E36CECA07AD6A04B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				796E987D005CCAB0D2B56609 /* Pods-YYExtentions_Tests.debug.xcconfig */,
 				200B66D5892938CA7A22CFBF /* Pods-YYExtentions_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
