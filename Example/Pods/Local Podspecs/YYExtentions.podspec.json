@@ -18,5 +18,11 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YYExtentions/Classes/**/*"
+  "source_files": "YYExtentions/Classes/**/*",
+  "swift_versions": "5.0",
+  "frameworks": [
+    "UIKit",
+    "CommonCrypto"
+  ],
+  "swift_version": "5.0"
 }
