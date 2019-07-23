@@ -16,7 +16,7 @@ func LZCoulorFromHexSwift(rgb: NSInteger) -> UIColor {
 }
 
 //协议扩展
-protocol YExtensionProtocol {
+public protocol YExtensionProtocol {
     associatedtype YExtensionType
     var value: YExtensionType { get }
 }
@@ -28,9 +28,9 @@ extension YExtensionProtocol {
 }
 
 ///Struct的扩展基础
-struct YExtensionKitStructEncodable<T>: YExtensionProtocol {
-    var value: T
-    typealias YExtensionType = T
+public struct YExtensionKitStructEncodable<T>: YExtensionProtocol {
+    public var value: T
+    public typealias YExtensionType = T
     /// 构造方法
     init(kit: T) {
         self.value = kit
