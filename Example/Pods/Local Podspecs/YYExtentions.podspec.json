@@ -1,7 +1,7 @@
 {
   "name": "YYExtentions",
   "version": "0.1.0",
-  "summary": "A short description of YYExtentions.",
+  "summary": "Swift 扩展",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/YaoChengZhen/YYExtentions",
   "license": {
@@ -16,13 +16,10 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "YYExtentions/Classes/**/*",
   "swift_versions": "5.0",
-  "frameworks": [
-    "UIKit",
-    "CommonCrypto"
-  ],
+  "frameworks": "UIKit",
   "swift_version": "5.0"
 }
