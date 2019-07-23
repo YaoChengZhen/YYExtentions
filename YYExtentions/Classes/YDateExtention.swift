@@ -10,7 +10,7 @@
 import UIKit
 
 //MARK:日期的一些操作
-extension YExtensionProtocol where YExtensionType == Date {
+public extension YExtensionProtocol where YExtensionType == Date {
     /// 获取当前 秒级 时间戳 - 10位
     var timeStamp: String {
         let timeInterval: TimeInterval = value.timeIntervalSince1970

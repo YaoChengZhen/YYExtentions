@@ -10,7 +10,7 @@
 import UIKit
 
 //MARK: UIViewControllerExtension
-extension YExtensionProtocol where YExtensionType == UIViewController {
+public extension YExtensionProtocol where YExtensionType == UIViewController {
     
     ///navigation LeftButton is Image
     func addLeftBtn(imageName: String, action: @escaping BlockButtonAction) -> Void {
@@ -49,7 +49,7 @@ extension YExtensionProtocol where YExtensionType == UIViewController {
     }
 }
 //MARK: UIViewController,右边返回按钮
-extension YExtensionProtocol where YExtensionType == UIViewController {
+public extension YExtensionProtocol where YExtensionType == UIViewController {
     
     ///导航栏右边添加图片
     func addRightBtn(imageName: String, action: @escaping BlockButtonAction) -> Void {

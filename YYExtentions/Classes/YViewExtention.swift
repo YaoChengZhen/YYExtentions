@@ -10,7 +10,7 @@
 import UIKit
 
 //MARK:UIView frame
-extension YExtensionProtocol where YExtensionType == UIView {
+public extension YExtensionProtocol where YExtensionType == UIView {
     ///中心点X
     var centerX: CGFloat {
         get {

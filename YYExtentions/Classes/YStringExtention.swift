@@ -13,22 +13,22 @@ import CommonCrypto
  只要是不是传参数的都可以用属性来解决
  */
 //MARK:String 扩展有关路径path扩展
-extension YExtensionProtocol where YExtensionType == String {
+public extension YExtensionProtocol where YExtensionType == String {
     ///路径：http://www/ff.txt 结果：ff.txt
-    internal var lastPathComponent: String {
+    var lastPathComponent: String {
         get {
             return NSString.init(string: value).lastPathComponent
         }
     }
     
     ///获取后缀类型
-    internal var pathExtension: String {
+    var pathExtension: String {
         get {
             return NSString.init(string: value).pathExtension
         }
     }
     ///删除路径扩展
-    internal var deletePathExtension: String {
+    var deletePathExtension: String {
         get {
             return NSString.init(string: value).deletingPathExtension
         }
@@ -36,9 +36,9 @@ extension YExtensionProtocol where YExtensionType == String {
 }
 
 //MARK:String-MD5加密32位
-extension YExtensionProtocol where YExtensionType == String {
+public extension YExtensionProtocol where YExtensionType == String {
     ///MD5加密32位小写
-    internal var toMd5Lower: String {
+    var toMd5Lower: String {
         let str = value.cString(using: .utf8)
         let strLen = CUnsignedInt(value.lengthOfBytes(using: .utf8))
         let digestLen = Int(CC_MD5_DIGEST_LENGTH)
@@ -69,7 +69,7 @@ extension YExtensionProtocol where YExtensionType == String {
 }
 
 //MARK:String-宽高计算
-extension YExtensionProtocol where YExtensionType == String {
+public extension YExtensionProtocol where YExtensionType == String {
     ///宽度给定、字体给定：算出高度
     func yy_getMaxHeight(font: UIFont, width: CGFloat) -> CGFloat {
         let size = CGSize.init(width: width, height: CGFloat(MAXFLOAT))
@@ -122,7 +122,7 @@ extension YExtensionProtocol where YExtensionType == String {
 }
 
 //MARK:String-其他操作
-extension YExtensionProtocol where YExtensionType == String {
+public extension YExtensionProtocol where YExtensionType == String {
     ///字符串包含
     func yy_has(string:String) -> Bool {
         return value.contains(string)
@@ -140,7 +140,7 @@ extension YExtensionProtocol where YExtensionType == String {
 }
 
 //MARK:String-数据校验
-extension YExtensionProtocol where YExtensionType == String {
+public extension YExtensionProtocol where YExtensionType == String {
     
     ///手机号校验
     var isMobile: Bool {

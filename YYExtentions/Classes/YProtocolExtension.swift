@@ -21,7 +21,7 @@ public protocol YExtensionProtocol {
     var value: YExtensionType { get }
 }
 //BackDefaultColor
-extension YExtensionProtocol {
+public extension YExtensionProtocol {
     var defalutColor: UIColor {
         return LZCoulorFromHexSwift(rgb: 0xffffff)
     }
