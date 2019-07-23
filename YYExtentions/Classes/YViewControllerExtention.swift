@@ -89,7 +89,7 @@ extension YExtensionProtocol where YExtensionType == UIViewController {
 }
 
 //MARKL: VC扩展属性
-extension UIViewController {
+public extension UIViewController {
     var yy_kit: YExtensionKitStructEncodable<UIViewController> {
         return YExtensionKitStructEncodable.init(kit: self)
     }

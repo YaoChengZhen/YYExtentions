@@ -198,7 +198,7 @@ extension YExtensionProtocol where YExtensionType == String {
 }
 
 //MARKL: Date扩展属性
-extension String {
+public extension String {
     var yy_kit: YExtensionKitStructEncodable<String> {
         return YExtensionKitStructEncodable.init(kit: self)
     }

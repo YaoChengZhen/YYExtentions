@@ -27,7 +27,7 @@ extension YExtensionProtocol where YExtensionType == Date {
 }
 
 //MARKL: Date扩展属性
-extension Date {
+public extension Date {
     var yy_kit: YExtensionKitStructEncodable<Date> {
         return YExtensionKitStructEncodable.init(kit: self)
     }

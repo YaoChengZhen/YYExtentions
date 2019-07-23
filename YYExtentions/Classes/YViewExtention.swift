@@ -71,7 +71,7 @@ extension YExtensionProtocol where YExtensionType == UIView {
 }
 
 //MARK: UIViewExtension
-extension UIView {
+public extension UIView {
     var yy_kit: YExtensionKitStructEncodable<UIView> {
         return YExtensionKitStructEncodable.init(kit: self)
     }
