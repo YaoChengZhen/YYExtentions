@@ -20,6 +20,10 @@ public extension YExtensionProtocol where YExtensionType == UIView {
             value.center = CGPoint.init(x: x, y: centerY)
         }
     }
+    ///设置centerX
+    func setCenterX(_ newValue: CGFloat) -> Void {
+        value.center = CGPoint.init(x: newValue, y: centerY)
+    }
     
     ///中心点Y
     var centerY: CGFloat {
@@ -29,6 +33,10 @@ public extension YExtensionProtocol where YExtensionType == UIView {
         set(y) {
             value.center = CGPoint.init(x: centerX, y: y)
         }
+    }
+    ///设置centerY
+    func setCenterY(_ newValue: CGFloat) -> Void {
+        value.center = CGPoint.init(x: centerX, y: newValue)
     }
     
     ///origin  X
@@ -40,15 +48,24 @@ public extension YExtensionProtocol where YExtensionType == UIView {
             value.frame.origin = CGPoint.init(x: x, y: originY)
         }
     }
+    ///设置origin  X
+    func setOriginX(_ newValue: CGFloat) -> Void {
+        value.frame.origin = CGPoint.init(x: newValue, y: originY)
+    }
+    
+    
     ///origin  Y
     var originY: CGFloat {
         get {
             return value.frame.origin.y
         }
-        set(y) {
-            value.frame.origin = CGPoint.init(x: originX, y: y)
-        }
     }
+    
+    ///设置origin  Y
+    func setOriginY(_ newValue: CGFloat) -> Void {
+        value.frame.origin = CGPoint.init(x: originX, y: newValue)
+    }
+    
     
     ///View宽
     var width: CGFloat {
@@ -59,14 +76,21 @@ public extension YExtensionProtocol where YExtensionType == UIView {
             value.frame.size = CGSize.init(width: width, height: height)
         }
     }
+    
+    ///设置View的宽
+    func setWidth(_ newValue: CGFloat) -> Void {
+        value.frame.size = CGSize.init(width: newValue, height: height)
+    }
+    
     ///View高
     var height: CGFloat {
         get {
             return value.bounds.size.height
         }
-        set(height) {
-            value.frame.size = CGSize.init(width: width, height: height)
-        }
+    }
+    ///设置View的高
+    func setHeight(_ newValue: CGFloat) -> Void {
+        value.frame.size = CGSize.init(width: width, height: newValue)
     }
 }
 

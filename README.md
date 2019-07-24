@@ -30,6 +30,7 @@ Then, run the following command:
 $ pod install
 ```
 ### Info
+优点：不会影响现有的扩展，完全不侵入方式的扩展调用类似：view.snp.xxx
 BlockButton: UIbutton Block功能
 YDateExtention: 日期扩展
 YStringExtention: 有关String扩展，功能有：Md5加密、有关密码、邮箱、车牌号、手机号、URL链接等等的校验
@@ -61,7 +62,8 @@ String
 View 
 ```ruby
 let centerX: CGFloat = view.yy_kit.centerX //获取
-view.yy_kit.centerX = 100 //设置
+view.yy_kit.setHeight(100)
+view.yy_kit.setCenterX(300)//设置中心点
 ```
 ## Author
 
