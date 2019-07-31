@@ -67,13 +67,13 @@ view.yy_kit.setCenterX(300)//设置中心点
 ```
 View添加圆角
 ```ruby
-let view = UIView.init()
-view.frame = CGRect(xxxx)
-view.yy_kit.drawRounds(round: 6) //圆角是6
+let aView = UIView.init()
+aView.frame = CGRect.init(x: 30, y: 80, width: 120, height: 120)
+aView.yy_kit.drawRounds(round: 6) //圆角是6
 
 //方式二就是四个角，分别给那个方向设置 UIRectCorner参数
  let corner = UIRectCorner.init(arrayLiteral: .topLeft, .topRight)
-        myView.yy_kit.drawRounds(corners: corner, round: 6)
+ aView.yy_kit.drawRounds(corners: corner, round: 6)
 ```
 ## Author
 
