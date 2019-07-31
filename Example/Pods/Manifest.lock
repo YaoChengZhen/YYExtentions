@@ -1,5 +1,5 @@
 PODS:
-  - YYExtentions (1.0.5)
+  - YYExtentions (1.0.6)
 
 DEPENDENCIES:
   - YYExtentions (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YYExtentions: a993772e761beb493028c1ff0a784ac7036e0cd3
+  YYExtentions: aa49184efd56ba2c86df2d6b839d262ce1593193
 
 PODFILE CHECKSUM: e8245ddece58e723b5cdf3846c0b8483856524e1
 

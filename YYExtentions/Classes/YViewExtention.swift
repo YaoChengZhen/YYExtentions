@@ -94,6 +94,27 @@ public extension YExtensionProtocol where YExtensionType == UIView {
     }
 }
 
+//MARK:View圆角扩展
+public extension YExtensionProtocol where YExtensionType == UIView {
+    
+    ///设置圆角
+    func drawRounds(round: CGFloat) -> Void {
+        let path = UIBezierPath.init(roundedRect: value.bounds, cornerRadius: round)
+        let layerSharpe = CAShapeLayer.init()
+        layerSharpe.path = path.cgPath
+        layerSharpe.frame = value.bounds
+        value.layer.mask = layerSharpe
+    }
+    ///设置圆角。四个角那几个设置
+    func drawRounds(corners: UIRectCorner, round: CGFloat) -> Void {
+        let path = UIBezierPath.init(roundedRect: value.bounds, byRoundingCorners: corners, cornerRadii: CGSize.init(width: round, height: round))
+        let layerSharpe = CAShapeLayer.init()
+        layerSharpe.path = path.cgPath
+        layerSharpe.frame = value.bounds
+        value.layer.mask = layerSharpe
+    }
+}
+
 //MARK: UIViewExtension
 public extension UIView {
     var yy_kit: YExtensionKitStructEncodable<UIView> {
