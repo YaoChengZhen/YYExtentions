@@ -78,7 +78,6 @@ aView.yy_kit.drawRounds(round: 6) //圆角是6
 ## Author
 
 BruceYao
-2550884372@qq.com
 
 ## License
 
